@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+   
+</head>
+<body class="py-12  px-4 flex min-h-[100vh] bg-gradient-to-tr from-slate-200 to-slate-100 font-[Poppins] ">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Profile Card</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Profile Card Design with blur effect</p>
+        </div>
+    <!-- Profile Card -->
+        <div class="bg-[url('../ressources/woman.png')] flex relative min-h-[500px] max-w-[300px] mx-auto border-10 rounded-4xl overflow-hidden  border-slate-100 shadow-lg  bg-cover">
+         <div class="absolute bottom-0 pb-3 px-4 pt-2  bg-white/30 backdrop-blur-sm ">
+            <!--Card content -->
+            <h1 class="mb-2 text-2xl">Sophie Bennette <i class="fa-regular fa-circle-check text-green-700"></i></h1>
+            <p class="font-thin">Product Designer who focuses on simplicity and usability</p>
+              <div class="flex pl-2 gap-3 mt-6 items-center">
+          <div class=" mr-4 ">
+            <i class="fa-solid fa-user mr-1 text-slate-600 "></i>
+            <span>312</span>
+          </div>
+          <div class="">
+          <i class="fa-solid fa-calendar-check mr-1 text-slate-600"></i>
+            <span>48</span>
+          </div>
+          <button class="grow bg-gradient-to-b from-slate-100 to-slate-300 hover:from-slate-300 hover:to-slate-100 transition duration-300 hover:-translate-y-0.5 py-3 rounded-4xl drop-shadow-md ">Follow +</button>
+
+         </div>
+         </div>    
+       
+        </div>
+    </div>
+    </body>
+</html>
