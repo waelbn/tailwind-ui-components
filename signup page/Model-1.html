@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chela+One&family=Cossette+Titre:wght@400;700&family=Poiret+One&family=Pompiere&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   
+</head>
+<body class="flex min-h-[100vh]  font-[Poppins] ">
+    <div class="w-full  overflow-hidden  ">
+        <div class="flex flex-col sm:flex-row items-center "> 
+    <div class=" min-w-md px-5 pt-20   sm:pt-20 sm:px-10">
+        <h1 class="text-4xl font-bold mb-1">Inscription</h1>
+        <a href="" class=" text-sm font-medium text-green-600">Déjà inscrit ? Connectez-vous.</a>
+     <form class="space-y-6 mt-8">
+        <div >
+            <label for="email" class="text-sm ">Adresse e-mail</label>
+            <input
+            type="text"
+            placeholder="Votre email"
+            id="email" 
+            required
+            class="w-full shadow-lg outline outline-slate-400  focus:outline-slate-500 px-3 py-2  rounded-md text-sm mt-1 ">
+           </div>
+          <div >
+            <label for="email" class="text-sm ">Mot de passe</label>
+            <input 
+            type="password" 
+            placeholder="Mot de passe" 
+            id="email" 
+            class="w-full shadow-lg outline outline-slate-400  focus:outline-slate-500 px-3 py-2  rounded-md text-sm mt-1 ">
+
+        </div>
+        <div >
+            <label for="email" class="text-sm ">Répétez votre mot de passe</label>
+            <input 
+            type="password" 
+            placeholder="Répétez votre mot de passe" 
+            id="email" 
+            class="w-full shadow-lg outline outline-slate-400  focus:outline-slate-500 px-3 py-2  rounded-md text-sm mt-1 ">
+
+        </div>
+
+
+        <div class="px">
+           <input type="checkbox" id="remember-me" class="align-middle mr-1">
+           <label for="remember-me" class="text-xs font-light  ">Se souvenir de moi</label>
+
+        </div>
+
+        <button type="submit" class=" bg-green-700 w-full text-white py-2 rounded-lg shadow-lg hover:bg-green-600 cursor-pointer">S"inscrire</button>
+      </form>
+<div class="flex justify-center items-center gap-2 mt-5">
+    <a href="" class="p-2 ring ring-slate-500 rounded-xl hover:bg-slate-200"><img src="../ressources/ig.svg" alt="" class="size-5"></a>
+    <a href="" class="p-2 ring ring-slate-500 rounded-xl"><img src="../ressources/pinterest.svg" alt="" class="size-5"></a>
+    <a href="" class="p-2 ring ring-slate-500 rounded-xl"><img src="../ressources/tumblr.svg" alt="" class="size-5"></a>
+</div>
+
+        </div>
+        
+    <img src="../ressources/nature.jpg" alt="" class=" object-cover hidden sm:block h-svh object-right-top grow">
+   
+      
+</div>
+
+</div>
+        </body>
+        </html>
