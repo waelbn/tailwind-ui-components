@@ -8,18 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="h-full flex flex-col">
-    
-    <header>
-        <nav class="  flex  justify-between px-4  py-3 shadow-lg rounded-lg bg-slate-100 items-center fixed w-full  ">
-            <a href="#accueil"><img src="../ressources/RocketLogo.svg" alt="" class="size-11"></a>
-            <ul class="flex gap-5 items-baseline">
+    <header class="flex z-20 laptop:px-4 pointer-events-none laptop:items-center fixed w-full top-0 laptop:top-3 left-0 justify-center ">
+        <nav class=" px-4 py-3 w-full flex flex-col pointer-events-auto laptop:flex-row justify-between laptop:items-center laptop:max-w-5xl shadow-lg rounded-lg bg-slate-100   ">
+            <div class="flex flex-row justify-between">
+            <a href="#accueil" class="w-14"><img src="../ressources/RocketLogo.svg" alt="" class="w-10"></a>
+            <button class="laptop:hidden  border px-2 border-slate-300"><img src="../ressources/menu.svg" alt="menu icon" class="w-5"></button>
+            </div>
+            <ul class=" hidden laptop:flex flex-col laptop:flex-row  gap-5 items-baseline mx-auto space-y-2 laptop:space-y-0 pt-2 laptop:pt-0">
                 <li><a href="#accueil" class="text-  font-medium">Accueil</a></li>
                 <li><a href="#service" class="font-medium">Service</a></li>
                 <li><a href="#tarif" class="font-medium">Nos Tarifs</a></li>
                 <li><a href="#contact" class="font-medium">Contact</a></li>
             </ul>
-           <a href="" class="size-7  "><img src="../ressources/user.svg" alt=""></a>
-           
+           <div href="" class="w-14 hidden group relative justify-end laptop:flex  cursor-pointer">
+            <img src="../ressources/user.svg" alt="" class="w-7">
+            <div class=" group-hover:block hidden absolute right-0 top-full pt-6  ">
+                <ul class="p-5 rounded-lg border border-slate-400 bg-slate-50">
+                 <li class="mb-5">
+                    <a href="" class=" px-5 py-2 border border-indigo-400 bg-slate-100 rounded-lg font-medium text-indigo-400 ">Connexion</a>
+                 </li>
+                 <li>
+                    <a href="" class=" px-5 py-2 border border-indigo-400 bg-slate-100 rounded-lg font-medium text-indigo-400">Inscription</a>
+                 </li>
+
+                </ul>
+            </div>
+        
+        </div>
         </nav>
     </header>
   
@@ -61,7 +76,7 @@
 <!-- Analytics section-->
 
 <section class="bg-gradient-to-r from-20% from-blue-700 to-blue-500 py-10 px-5 text-center flex flex-col justify-center min-h-[350px] mx-auto">
-<h1 class="font-extrabold text-white text-3xl sm:text-4xl mb-2">10K+ Développeurs déjà convaincus</h1>
+<h2 class="font-extrabold text-white text-3xl sm:text-4xl mb-2">10K+ Développeurs déjà convaincus</h2>
 <p class="mt-2 text-sm text-slate-300 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 <ul class="flex gap-8 mx-auto mt-5">
     <li>

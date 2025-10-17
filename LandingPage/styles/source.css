@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+
+/*variant CSS*/
+@theme {
+
+    --breakpoint-laptop:820px;
+}
